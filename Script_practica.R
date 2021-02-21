@@ -1,3 +1,7 @@
+## Including Plots
+#install.packages("ggplot2")
+library(ggplot2)
+
 # 2.4 Writing your own functions
 roll <- function(){
   dado <- c(1:6)
@@ -33,3 +37,4 @@ qplot(x2, binwidth = 1)
 
 rolls <- replicate(10000, roll())
 qplot(rolls, binwidth = 1)
+
